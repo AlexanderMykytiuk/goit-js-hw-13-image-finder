@@ -1,7 +1,7 @@
 const refs = {
     hitsContainer: document.querySelector('.gallery'),
-    searchForm: document.querySelector('#search-form')
-    // buttonLoadMore: document.querySelector(".js-button"),
+    searchForm: document.querySelector('#search-form'),
+    buttonLoadMore: document.querySelector(".js-button")
     // spinner: document.querySelector(".spinner")
 }
 export default refs;

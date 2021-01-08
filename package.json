@@ -50,8 +50,11 @@
     "webpackbar": "^4.0.0"
   },
   "dependencies": {
+    "basiclightbox": "^5.0.3",
+    "bootstrap": "^3.4.1",
     "core-js": "^3.6.5",
     "handlebars": "^4.7.6",
-    "lodash.debounce": "^4.0.8"
+    "lodash.debounce": "^4.0.8",
+    "toastr": "^2.1.4"
   }
 }

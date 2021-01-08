@@ -1,18 +1,24 @@
 import './styles.css';
 import refs from './JS/refs';
-import apiService from './JS/apiService';
+import apiService from './JS/api-service';
 import updateHitsMarkup from './JS/update-hits-markup';
+import toastr from './JS/toastr';
+require('bootstrap');
 
 refs.searchForm.addEventListener('submit', event => {
   // event.prevetDefault();
   const form = event.currentTarget;
-  const inputValue = form.elements.query.value;
-
+  apiService.query = form.elements.query.value;
   refs.hitsContainer.innerHTML = '';
-  form.reset();
+  
+  apiService.resetPage();
 
-  apiService(inputValue).then(updateHitsMarkup);
+  apiService.fetchHits().then(updateHitsMarkup);
+  form.reset();
 });
 
+refs.buttonLoadMore.addEventListener('click', () => {
+  apiService.fetchHits().then(updateHitsMarkup);
+})
 
 
