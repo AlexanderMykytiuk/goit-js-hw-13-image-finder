@@ -4,6 +4,7 @@ import apiService from './JS/api-service';
 import updateHitsMarkup from './JS/update-hits-markup';
 import toastr from './JS/toastr';
 require('bootstrap');
+import * as basicLightbox from 'basiclightbox';
 
 refs.searchForm.addEventListener('submit', event => {
   // event.prevetDefault();
