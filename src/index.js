@@ -29,10 +29,10 @@ function fetchHits() {
         updateHitsMarkup(hits)
         refs.buttonLoadMore.classList.remove('is-hidden')
 
-        // window.scrollTo({
-        //   top: 10000000,
-        //   behavior: 'smooth',
-        // })
+        window.scrollTo({
+          top: 10000000,
+          behavior: 'smooth',
+        })
       } else if (hits.length === 0) {
         toastr.error('Please enter the correct value!', 'Inconceivable!')
       }
