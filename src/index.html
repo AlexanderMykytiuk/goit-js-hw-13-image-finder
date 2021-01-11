@@ -31,17 +31,13 @@
       <!-- Список <li> с карточками изображений -->
     </ul>
     <div class="container-button">
-      <button class="js-button btn btn-primary is-hidden" type="button">
-        Load more...
+      <button class="btn btn-primary js-button is-hidden" type="button" disabled>
+        <span
+          class="spinner-border spinner-border-sm spinner--hidden"
+          role="status"
+        ></span>
+        <span class="visually-hidden label">Show more...</span>
       </button>
-    </div>
-
-    <div class="container spinner is-hidden">
-      <div class="circle circle-1"></div>
-      <div class="circle circle-2"></div>
-      <div class="circle circle-3"></div>
-      <div class="circle circle-4"></div>
-      <div class="circle circle-5"></div>
     </div>
   </body>
 </html>
